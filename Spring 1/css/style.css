@@ -1,0 +1,141 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+}
+
+body{
+    background: #F3F5FC;
+}
+
+header{
+    display: inline-block;
+}
+
+.logo-alura{
+    margin: 35px 0 0 70px;
+}
+
+main{
+    display: flex;
+}
+
+section{
+    flex-direction: row;
+}
+
+.texto-usuario{
+    margin-top: 60px;
+    margin-left: 200px;
+    border: none;
+    resize: none;
+    background: #F3F5FC;
+    color: #0A3871;
+}
+
+.texto-usuario:focus{
+    outline:none;
+}
+
+.texto-usuario::placeholder{    
+    
+    color: #0A3871;
+}
+
+.area-para-convertir{
+    margin-left: 200px;
+    margin-top: 82px;
+}
+
+#indicador-caracteres-validos{
+    background-image: url("/imagenes/icono.png");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    font-size: 12px; 
+    color: #495057;
+}
+
+.boton-encriptar, .boton-desencriptar{
+    font-size: 12px;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    height: 40px;
+    width: 310px;
+}
+
+.boton-encriptar{
+    background: #0A3871;
+    color: white;
+    font-weight: normal;
+}
+
+.boton-desencriptar{
+    background: white;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+.area-texto-covertido{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-right: 50px;
+    height: 90%;
+    border-radius: 20px;
+    background-color: white;
+    width: 25%;
+}
+
+.texto-convertido{
+    background-color: white;
+    margin: 15px;
+    border: none;
+    resize: none;
+    width: 90%;
+    font-size: 20px;
+    color: #495057
+}
+
+.boton-copiar-encriptacion{
+
+    background: white;
+    color: #0A3871;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin: 0px auto;
+    margin-top: 45px;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    width: 90%;
+    height: 40px;
+}
+
+.imagen-texto-noencontrado{
+    margin: 0 25px;
+    margin-top: 100px;
+}
+
+.texto-no-encontrado{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    margin: 0 25px;
+}
+
+.texto-informativo-encriptar{
+    font-size: 14px;
+    text-align: center;
+    margin: 0 25px;
+    margin-top: 10px;
+}
+
+.area-ocultar{
+    display: none;
+}

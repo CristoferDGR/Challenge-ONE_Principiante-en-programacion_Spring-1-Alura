@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo-alura" src="imagenes/Logo.png" alt="Logo de Alura"> 
+        </header>
+
+        <main>
+            <section>
+                <textarea class="texto-usuario" cols="40" rows="6"
+                placeholder="Ingrese el texto aquí"></textarea>
+                
+                <div class="area-para-convertir">
+                <h3 id="indicador-caracteres-validos">Solo letras minúsculas y sin acentos</h3>
+                <input type="submit" value="Encriptar" class="boton-encriptar">
+                <input type="submit" value="Desencriptar" class="boton-desencriptar">
+                </div>
+            </section>
+            
+            <section class="area-texto-covertido">
+
+                <div id="area-con-texto" class="area-ocultar">
+                    <textarea type="text" class="texto-convertido" cols="20" rows="13" disabled
+                    ></textarea>
+                    <input type="submit" value="Copiar" class="boton-copiar-encriptacion">
+                </div>
+                
+                <div class="area-sin-texto">
+                    <img class="imagen-texto-noencontrado" src="imagenes/Muñeco.png" alt="muñeco">
+                    <p class="texto-no-encontrado">Ningún texto fue encontrado</p>
+                    <p class="texto-informativo-encriptar">ingrese el texto que desea encriptar o desencriptar</p>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+
+
+        </footer>
+    </body>
+    <script src="js/encriptarTexto.js"></script>
+    <script src="js/desencriptarTexto.js"></script>
+    <script src="js/copiarTexto.js"></script>
+
+    
+</html>
